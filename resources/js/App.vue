@@ -1,0 +1,27 @@
+<template>
+    <RouterView/>
+</template>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --index: calc(1vw + 1vh);
+    --transition: (1.5s cubic-bezier(.05, .5, 0, 1));
+}
+@font-face {
+    font-family: kamerik-3d;
+    src: url('/fonts/kamerik205-heavy.woff2');
+    font-weight: 900;
+}
+@font-face {
+    font-family: merriweather-italic-3d;
+    src: url('/fonts/merriweather-regular-italic.woff2');
+}
+body{
+    font-family: kamerik-3d;
+}
+</style>
