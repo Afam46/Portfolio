@@ -1,8 +1,6 @@
 <template>
     <HomeMain/>
-    <HomeAbout/>
-    <HomeSkills :skills="skills"/>
-    <HomePortfolio :projects="projects"/>
+    <HomeColumns :skills="skills"/>
 </template>
 
 <script>
@@ -11,9 +9,10 @@ import HomeMain from './HomeMain.vue';
 import HomeSkills from './HomeSkills.vue';
 import HomePortfolio from './HomePortfolio.vue';
 import HomeAbout from './HomeAbout.vue';
+import HomeColumns from './HomeColumns.vue';
 
 export default{
-    components:{HomeMain, HomeSkills, HomePortfolio, HomeAbout},
+    components:{HomeMain, HomeSkills, HomePortfolio, HomeAbout, HomeColumns},
     data(){
         return{
             skills: null,

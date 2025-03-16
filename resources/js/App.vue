@@ -23,5 +23,6 @@
 }
 body{
     font-family: kamerik-3d;
+    color:white;
 }
 </style>
