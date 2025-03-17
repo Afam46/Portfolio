@@ -1,20 +1,24 @@
 <template>
     <header>
-        <a class="name-header">Ислам Зайнуллин</a>
         <nav>
             <div class="nav-item" @mouseover="animateBar(0)"
             @mouseout="animateBarDestroy(0)">
-                <a>Мои навыки</a>
+                <router-link :to="{name: 'main'}">На главную</router-link>
                 <div class="nav-bar"></div>
             </div>
             <div class="nav-item" @mouseover="animateBar(1)"
             @mouseout="animateBarDestroy(1)">
-                <a>Портфолио</a>
+                <router-link :to="{name: 'skills'}">Мои навыки</router-link>
                 <div class="nav-bar"></div>
             </div>
             <div class="nav-item" @mouseover="animateBar(2)"
             @mouseout="animateBarDestroy(2)">
-                <a>Обо мне</a>
+                <router-link :to="{name: 'portfolio'}">Портфолио</router-link>
+                <div class="nav-bar"></div>
+            </div>
+            <div class="nav-item" @mouseover="animateBar(3)"
+            @mouseout="animateBarDestroy(3)">
+            <router-link :to="{name: 'about'}">Обо мне</router-link>
                 <div class="nav-bar"></div>
             </div>
         </nav>
@@ -42,9 +46,8 @@ header{
     position: absolute;
     width: 100%;
     z-index: 10;
-    color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     height: 8%;
     align-items: center;
 }
@@ -56,7 +59,8 @@ nav{
     display: flex;
 }
 .nav-item{
-    margin-right: 10px;
+    font-size: 18px;
+    margin-right: 15px;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -66,7 +70,7 @@ nav{
     width: 0;
     height: 1.5px;
     background-color: white;
-    animation-duration: .5s;
+    animation-duration: .2s;
     animation-timing-function: linear;
 }
 @keyframes barMove {
@@ -76,11 +80,5 @@ nav{
     to{
         width: 100%;
     }
-}
-h1{
-    font-size: 50px;
-}
-h2{
-    font-size: 35px;
 }
 </style>
