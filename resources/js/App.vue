@@ -136,4 +136,42 @@ h1{
     pointer-events: none;
     background-image: url('/public/img/color.png');
 }
+@media (max-width: 1150px) {
+.layer-1{
+    scale: 1.3;
+}
+.layer-2 img{
+    scale: .26;
+    left: -30vw;
+    top: -35vh;
+}
+}
+@media (max-width: 1000px) {
+.layer-2{
+    scale: .7;
+}
+}
+@media (max-width: 850px) {
+.layer-1{
+    scale: 1.4;
+}
+.layer-2{
+    scale: .6;
+}
+.layer-2 img{
+    left: -55vw;
+    top: -5vh;
+}
+}
+@media (max-width: 500px) {
+.layer-1{
+    scale: 1.5;
+}
+.layer-4 h1{
+    font-size: calc(var(--index) * 2.6);
+}
+.layer-2 img{
+    display: none;
+}
+}
 </style>

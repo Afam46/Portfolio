@@ -1,6 +1,6 @@
 <template>
     <div v-if="projects">
-        <p style="padding-top: 30px; color: rgb(91, 91, 91);
+        <p style="padding-top: 60px; color: rgb(91, 91, 91);
         display: block;">
             У меня пока есть только пет-проекты, лишь один на хостинге
         </p>
@@ -98,13 +98,14 @@ export default{
 
 <style scoped>
 .arrow{
+    margin: 0 -15px;
     font-family: kamerik-3d;
-    font-size: 40px;
+    font-size: calc(var(--index) * 2);
     display: flex;
     justify-content: center;
     align-content: center;
-    width: 70px;
-    height: 70px;
+    width: calc(var(--index) * 3.5);
+    height: calc(var(--index) * 3.5);
     cursor: pointer;
     border: solid 3px rgb(255, 255, 255, .4);
     border-radius: 100%;
@@ -114,13 +115,13 @@ export default{
     background-color: rgba(99, 99, 99, 0.4);
 }
 p{
-    font-size: 16px;
+    font-size: calc(var(--index) * .7);
     text-align: center;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
 }
 .projects{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     padding: 40px 0;
     display: flex;
@@ -130,9 +131,10 @@ p{
 .project{
     transition: transform .4s;
     display: flex;
+    margin: 0 -14px;
     flex-direction: column;
     align-items: center;
-    width:25%;
+    width: calc(var(--index) * 19);
     border-radius: 20px;
     background-color: rgba(99, 99, 99, 0.2);
 }
@@ -146,5 +148,61 @@ p{
 .project-text{
     padding: 0 10px;
     padding-bottom: 20px;
+}
+@media (max-width: 900px) {
+    p{
+        font-size: calc(var(--index) * .6);
+    }
+    .arrow{
+        border: solid 2px rgb(255, 255, 255, .4);
+        font-size: calc(var(--index) * 1.45);
+        width: calc(var(--index) * 2.625);
+        height: calc(var(--index) * 2.625);
+    }
+    .project{
+        margin: 0 -22px;
+    }
+}
+@media (max-width: 650px) {
+    .projects{
+        width: 95%;
+    }
+    p{
+        font-size: calc(var(--index) * .55);
+    }
+    .arrow{
+        margin: 0 -22px;
+    }
+    .project{
+        width: calc(var(--index) * 16);
+        margin: 0 -15px;
+    }
+    .active:hover{
+        outline: 1px solid rgb(255, 255, 255, 0.4);
+    }
+}
+@media (max-width: 560px) {
+    .project{
+        width: calc(var(--index) * 14);
+        margin: 0 -15px;
+    }
+    p{
+        font-size: calc(var(--index) * .5);
+    }
+}
+@media (max-width: 460px) {
+    p{
+        font-size: calc(var(--index) * .45);
+    }
+    .arrow{
+        border: solid 2px rgb(255, 255, 255, .4);
+        margin: 0 -15px;
+    }
+}
+@media (max-width: 425px) {
+    .project{
+        width: calc(var(--index) * 12.8);
+        margin: 0 -13px;
+    }
 }
 </style>

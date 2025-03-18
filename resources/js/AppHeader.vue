@@ -59,7 +59,7 @@ nav{
     display: flex;
 }
 .nav-item{
-    font-size: 18px;
+    font-size: calc(var(--index) * .9);
     margin-right: 15px;
     cursor: pointer;
     display: flex;

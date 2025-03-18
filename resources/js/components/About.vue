@@ -30,5 +30,9 @@
 }
 p{
     font-family: "Open Sans", sans-serif;
+    font-size: calc(var(--index) * 1);
+}
+a{
+    font-size: calc(var(--index) * 1);
 }
 </style>

@@ -53,6 +53,9 @@ export default{
 </script>
 
 <style scoped>
+.logo{
+    scale: .8;
+}
 .skills{
     display: flex;
     flex-wrap: wrap;
@@ -60,11 +63,11 @@ export default{
     justify-content: center;
 }
 .skill{
-    width: 22%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px -25px;
+    margin: 10px -18px;
 }
 .skill-body{
     width: 30vh;
@@ -85,5 +88,66 @@ export default{
 p{
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 1000px) {
+    .skill{
+        width: 28%;
+        margin: 10px -20px;
+    }
+    .skill-body{
+        width: 25vh;
+        height: 25vh;
+    }
+    .logo{
+        scale: .75;
+    }
+}
+@media (max-width: 820px) {
+    .skill{
+        width: 30%;
+        margin: 10px -25px;
+    }
+    .skill-body{
+        width: 22vh;
+        height: 22vh;
+    }
+}
+@media (max-width: 620px) {
+    .skill{
+        margin: 10px -25px;
+    }
+    .skill-body{
+        width: 20vh;
+        height: 20vh;
+    }
+    .logo{
+        scale: .65;
+    }
+}
+@media (max-width: 540px) {
+    .skill{
+        width: 34%;
+        margin: 10px -25px;
+    }
+    .skill-body{
+        width: 18vh;
+        height: 18vh;
+    }
+    .logo{
+        scale: .55;
+    }
+}
+@media (max-width: 430px) {
+    .skill{
+        width: 45%;
+        margin: 10px -28px;
+    }
+    .skill-body{
+        width: 16vh;
+        height: 16vh;
+    }
+    .logo{
+        scale: .5;
+    }
 }
 </style>
