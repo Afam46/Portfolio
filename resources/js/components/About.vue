@@ -9,9 +9,8 @@
                 и фреймворков.
             </p>
             <div class="contacts">
-                <a href="https://t.me/Afam46">Тг: @Afam46</a><br>
+                <a href="https://t.me/afam46">Тг: @afam46</a><br>
                 <a>Почта: afamka2007@gmail.com</a><br>
-                <a href="https://kwork.ru/user/afam4642">Кворк: https://kwork.ru/user/afam4642</a>
             </div>
         </div>
     </div>

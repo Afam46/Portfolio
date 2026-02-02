@@ -63,7 +63,7 @@ export default{
     justify-content: center;
 }
 .skill{
-    width: 20%;
+    width: 22%;
     display: flex;
     align-items: center;
     justify-content: center;

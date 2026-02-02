@@ -1,9 +1,5 @@
 <template>
     <div v-if="projects">
-        <p style="padding-top: 60px; color: rgb(91, 91, 91);
-        display: block;">
-            У меня пока есть только пет-проекты, лишь один на хостинге
-        </p>
         <div class="projects">
             <button @click="prev" style="order: -5;" class="arrow">&lt;</button>
             <div class="project un-active" 
